@@ -1,6 +1,6 @@
  ## cryptsetup-nuke
 
-A simple patch to add NukeKey feature to cryptsetup 2:2.0.2-1ubuntu1.1 / 2:2.0.4-2ubuntu2 (Ubuntu 18.04 / 18.10)
+A simple patch to add NukeKey feature to cryptsetup 2:2.1.0-4 for Debian
 
 
 ## Requirements
@@ -9,14 +9,12 @@ A simple patch to add NukeKey feature to cryptsetup 2:2.0.2-1ubuntu1.1 / 2:2.0.4
 
 ## Installation
 
-Don't forget to change version number...2.0.2 or 2.0.4
-
 	sudo apt install build-essential libgcrypt11-dev libdevmapper-dev libpopt-dev uuid-dev libtool automake autopoint debhelper xsltproc docbook-xsl dpkg-dev
 	apt source cryptsetup
 	apt build-dep cryptsetup
 	git clone  https://github.com/roema/cryptsetup-nuke
-	cd cryptsetup-<2.0.4>
-	patch -p1 < ../cryptsetup-nuke/cryptsetup-<2.0.4>.patch
+	cd cryptsetup-2.1.0
+	patch -p1 < ../cryptsetup-nuke/cryptsetup-2.1.0-4.patch
 	dpkg-buildpackage -b -uc
 	cd ..
 	sudo dpkg -i ../libcryptsetup*.deb
