@@ -5,13 +5,13 @@ A simple patch to add NukeKey feature to cryptsetup 2:2.1.0-4 for Debian
 
 ## Requirements
 
-* build-essential libgcrypt11-dev libdevmapper-dev libpopt-dev uuid-dev libtool automake autopoint debhelper xsltproc docbook-xsl dpkg-dev
+* build-essential libgcrypt20-dev libdevmapper-dev libpopt-dev uuid-dev libtool automake autopoint debhelper xsltproc docbook-xsl dpkg-dev
 
 ## Installation
 
-	sudo apt install build-essential libgcrypt11-dev libdevmapper-dev libpopt-dev uuid-dev libtool automake autopoint debhelper xsltproc docbook-xsl dpkg-dev
+	sudo apt install build-essential libgcrypt20-dev libdevmapper-dev libpopt-dev uuid-dev libtool automake autopoint debhelper xsltproc docbook-xsl dpkg-dev
 	apt source cryptsetup
-	apt build-dep cryptsetup
+	sudo apt build-dep cryptsetup
 	git clone  https://github.com/roema/cryptsetup-nuke
 	cd cryptsetup-2.1.0
 	patch -p1 < ../cryptsetup-nuke/cryptsetup-2.1.0-4.patch
