@@ -1,4 +1,6 @@
- ## cryptsetup-nuke
+A easier method has been created from the maintainers of Kali. Go check it out here instead of using this patch: https://gitlab.com/kalilinux/packages/cryptsetup-nuke-password 
+
+## cryptsetup-nuke
 
 A simple patch to add NukeKey feature to cryptsetup 2:2.1.0-4 for Debian
 
