@@ -1,3 +1,5 @@
+# Better method for new versions of cryptsetup
+
 A easier method has been created from the maintainers of Kali. Go check it out here instead of using this patch: https://gitlab.com/kalilinux/packages/cryptsetup-nuke-password 
 
 ## cryptsetup-nuke
